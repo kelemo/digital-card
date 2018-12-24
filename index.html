@@ -7,9 +7,20 @@
 		body {
 			text-align: center;
 			background: url("images/image3.jpg") black;
+			background-size: 20px 20px;
+  			-webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  			animation: mymove 5s infinite;
 			color: white;
 			font-family: helvetica;
 
+		}
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes mymove {
+		  50% {background-size: 125px 125px;}
+		}
+
+		@keyframes mymove {
+		  50% {background-size: 125px 125px;}
 		}
 		p {
 			font-size: 18px;
@@ -50,7 +61,7 @@
 
 	<h3>A Program Developer</h3>
 
-		<p>Hi. My name is Kadiro Elemo. I'm a web developer from St.Paul.<br> I'm available for hiring or freelance.</p>
+		<p>Hi. My name is Kadiro Elemo. I'm a web developer from St.Paul.</p>
 
 	<input type="text" placeholder="your-email"> <button> sumbit </button>
 
